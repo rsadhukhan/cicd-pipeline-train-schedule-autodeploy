@@ -14,4 +14,4 @@
   - name: push dockerfile to dockerhub
     command: docker push rsadhukhan/train-schedule
   - name: remove docker image
-    command: docker image prune -a
+    command: docker image prune -a -f
