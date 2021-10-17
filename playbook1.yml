@@ -1,0 +1,12 @@
+---
+- hosts: webservers
+  become: true
+  become_user: root
+
+  tasks:
+  - name: loginto docker
+    command: docker login --username rsadhukhan --password XXY#760Qbe
+  - name: build dockerfile
+    command: docker build -t rsadhukhan/mywebapp .
+  - name: push dockerfile to dockerhub
+    command: docker push rsadhukhan/mywebapp
