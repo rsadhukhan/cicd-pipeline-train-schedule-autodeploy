@@ -5,6 +5,8 @@
   become_user: root
 
   tasks:
+  - name: start docker
+    service: name=docker state=restarted
   - name: loginto docker
     command: docker login --username rsadhukhan --password XXY#760Qbe
   - name: build dockerfile
