@@ -10,6 +10,6 @@
   - name: loginto docker
     command: docker login --username rsadhukhan --password XXY#760Qbe
   - name: build dockerfile
-    command: docker build -t rsadhukhan/mywebapp .
+    command: docker build -t rsadhukhan/train-schedule .
   - name: push dockerfile to dockerhub
-    command: docker push rsadhukhan/mywebapp
+    command: docker push rsadhukhan/train-schedule
