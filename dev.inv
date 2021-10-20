@@ -1,4 +1,5 @@
 [webservers]
-172.31.33.108 ansible_user=ec2-user
+localhost ansible_connection=local
 
+[kube]
 localhost ansible_connection=local
